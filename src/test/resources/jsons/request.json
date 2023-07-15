@@ -1,0 +1,18 @@
+{
+  "id": "number",
+  "first_name": "fname",
+  "last_name": "lastname",
+  "email": "emailf.emaill@example.com",
+  "address": {
+    "street_address": "84545 Bakwas Ave",
+    "city": "Anycity",
+    "state": "NY",
+    "postal_code": "457",
+    "country": "USA"
+  },
+  "favorite_foods": [
+    "Shit",
+    "Poop",
+    "Scat"
+  ]
+}

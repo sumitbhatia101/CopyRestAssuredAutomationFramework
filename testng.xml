@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="germany.listeners.TestListeners"></listener>
+    </listeners>
+    <test parallel="methods" thread-count="3" name="C:/Users/sumit/IdeaProjects/CopyRestAssuredAutomationFramework">
+        <classes>
+
+            <class name="tests.GetTests">
+                <methods>
+                    <include name="getEmployeeDetails" />
+                    <include name="getEmployeeDetailDataProvider" />
+                    <include name="getEmployeeDetail" />
+                </methods>
+            </class>
+            <class name="tests.AuthDemo">
+               <methods>
+
+                   <include name="basicAuthTest" />
+                   <include name="bearerTokenAuth" />
+                   <!--include name="gitBearerToken" />
+                   <include name="postGitBearerToken" /-->
+
+               </methods>
+           </class>
+            <class name="tests.PostTests">
+                <methods>
+                    <include name="postCallTestPojo" />
+                    <include name="postRequestUsingExternalFile" />
+
+                </methods>
+            </class>
+
+
+        </classes>
+    </test>
+</suite>
+
