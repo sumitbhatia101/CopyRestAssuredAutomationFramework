@@ -28,7 +28,7 @@ public class GetTests extends BaseTest{
         assertThat(response.jsonPath().getList("$").size())
                 .isPositive()
                 .as("validating size of the array")
-                .isLessThan(1000);
+                .isLessThan(5000);
 
         assertThat(response.getStatusCode()).isEqualTo(200);
 

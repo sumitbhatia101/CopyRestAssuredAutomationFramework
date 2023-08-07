@@ -2,7 +2,9 @@ package tests;
 
 
 import germany.annotations.FrameworkAnnotation;
+import germany.enums.PropertiesType;
 import germany.reports.ExtentLogger;
+import germany.utils.PropertyUtils;
 import io.restassured.config.LogConfig;
 import io.restassured.config.RestAssuredConfig;
 import io.restassured.response.Response;
@@ -146,7 +148,7 @@ public class AuthDemo {
                 .config(RestAssuredConfig.config().logConfig(LogConfig.logConfig().blacklistHeader("Authorization", "Content-Type")))// so that the password,Bearertoken etc are not logged.
                 .header("Content-Type", "Application/JSON")
                 .log().all()
-                .post("http://192.168.56.1:8181/rest/api/2/issue/");
+                .post((PropertyUtils.getValue(PropertiesType.HOSTMACHINE)) +":8181/rest/api/2/issue/");
 
         response.prettyPrint();
 
