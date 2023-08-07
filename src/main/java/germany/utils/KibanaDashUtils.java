@@ -26,6 +26,7 @@ public final class KibanaDashUtils {
                 .multiPart("file", file, "ndjson")
                 .post(LocalIPutils.getLocalIPAddress() + ":5601/api/saved_objects/_import?overwrite=true");
 
+
         Assert.assertEquals(response.statusCode(), 200);
         response.prettyPrint();
     }

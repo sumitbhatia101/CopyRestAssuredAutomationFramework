@@ -26,6 +26,7 @@ public final class ELKUtils {
                 .body(map)
                 .post(LocalIPutils.getLocalIPAddress() +":9200/smoke/results");
 
+
         Assert.assertEquals(response.statusCode(), 201);
 
 
