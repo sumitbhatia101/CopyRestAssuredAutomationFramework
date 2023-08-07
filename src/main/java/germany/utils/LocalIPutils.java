@@ -12,7 +12,8 @@ public final class LocalIPutils {
 
         try {
             hostIP = "http://"+ System.getenv("HOST_IP");
-            System.out.println(hostIP);
+            System.out.println("host IP = "+hostIP);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
