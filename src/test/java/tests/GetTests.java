@@ -13,7 +13,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class GetTests extends BaseTest{
     @Test
-    @FrameworkAnnotation(authors = {"Amuthan","Sumit"}, categories = {"Regression", "Smoke"})
+    @FrameworkAnnotation(authors = {"Amuthan","Sumit"}, categories = { "Smoke"})
     public void getEmployeeDetails(){
        Response response= RequestBuilder
                 .buildRequestForGetCalls()

@@ -12,7 +12,8 @@ public final class LocalIPutils {
 
         try {
             hostIP = "http://"+ System.getenv("HOST_IP");
-            System.out.println("host IP = "+hostIP);
+            System.out.println("host IP = "+hostIP); //non-compliant code & needs to be replaced by a logger.
+
 
         } catch (Exception e) {
             e.printStackTrace();

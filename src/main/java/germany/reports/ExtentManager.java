@@ -17,6 +17,9 @@ public final class ExtentManager {//this class is being created a separate class
                                                    This method is used to associate a specific ExtentTest object with the current thread.*/
         threadLocal.set(test);
     }
+    public static void removeExtent() {
+        threadLocal.remove(); // Call the remove() method to clean up the ThreadLocal variable.
+    }
 
     /*To summarize, the above code defines a mechanism to store and retrieve an ExtentTest object specific to each thread using a ThreadLocal variable.
      The getTest() method retrieves the ExtentTest object for the current thread, while the setExtent(ExtentTest test) method sets the ExtentTest object for the current thread.

@@ -29,11 +29,11 @@ public final class ExtentReport {
     }
     public static void addAuthor(String[] authors){
         for(String author: authors)
-        ExtentManager.getExtent().assignAuthor(author);
+            ExtentManager.getExtent().assignAuthor(author);
     }
 
     public static void addCategory(String[] categories){
         for(String category: categories)
-            ExtentManager.getExtent().assignCategory(categories);
+             ExtentManager.getExtent().assignCategory(category);
     }
 }

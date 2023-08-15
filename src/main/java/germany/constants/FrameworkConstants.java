@@ -1,7 +1,8 @@
 package germany.constants;
 
 public class FrameworkConstants {
-
+    private FrameworkConstants() {
+    }
     //if there are static methods in a class, the @Getter/@setter annotation would not work at class level, they have to be part of the signatures :
     //private static @Getter final String requestJsonFolderPath = System.getProperty("user.dir")+ "/src/test/resources/request.json/request.json";
     //private static @Getter final String responseJsonFolderPath = System.getProperty("user.dir")+ "/output/";
